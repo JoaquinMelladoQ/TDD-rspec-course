@@ -2,8 +2,8 @@ RSpec.describe 'before and after hooks' do
     before(:example) do
         puts 'aoehutnsoe'
     end
-    before(:example) do
-        puts 'aoehutnsoe'
+after(:example) do
+        puts 'after aoehutnsoe'
     end
     it 'is just a random example' do
         expect(5 * 4).to eq(20)
