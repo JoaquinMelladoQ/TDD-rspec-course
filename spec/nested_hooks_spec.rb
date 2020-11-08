@@ -24,7 +24,7 @@ RSpec.describe 'nested hooks' do
            expect(1 + 1).to eq(2)   
         end
         it 'it does substraction as well' do
-           expect(3 - 2).to eq(1)   
+           expect(5 - 3).to eq(2)   
         end
     end
 end
