@@ -7,4 +7,8 @@ RSpec.describe Hash do
         subject[:some_key] = "Some value"
         expect(subject.length).to eq(1)  
     end
+
+    it 'is isolated between examples' do 
+        expect(subject.length).to eq(0)  
+    end
 end
