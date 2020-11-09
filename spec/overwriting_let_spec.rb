@@ -14,11 +14,10 @@ RSpec.describe ProgrammingLanguage do
     end
 
     context 'with no argument' do
+        # let(:language) { ProgrammingLanguage.new } 
+
         it 'should default to Ruby as the name' do
             expect(language.name).to eq('Ruby') 
         end
     end
-    
-
-
 end
