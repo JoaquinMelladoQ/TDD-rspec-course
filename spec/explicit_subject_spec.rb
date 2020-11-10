@@ -9,4 +9,13 @@ RSpec.describe Hash do
         expect(subject.length).to eq(2) 
         expect(bob.length).to eq(2) 
     end
+
+    describe 'nexted example' do
+        it 'has two key-value pairs' do
+            expect(subject.length).to eq(2) 
+            expect(bob.length).to eq(2)
+        end
+    end
 end
+
+# above its references the Hash at the beg
