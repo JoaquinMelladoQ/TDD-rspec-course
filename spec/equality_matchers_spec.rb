@@ -29,9 +29,11 @@ RSpec.describe 'equality-matchers' do
         it 'equal cares about object identity' do
             expect(c).to eq(d) 
             expect(e).to eql(c)
-            
+
             expect(c).to equal(e)
-            expect(c).to be(e)   
+            expect(c).to be(e)
+            
+            expect(c).not_to equal(d) 
         end
     end
     
