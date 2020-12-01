@@ -14,7 +14,7 @@ RSpec.describe 'equality-matchers' do
         it 'test for value, inncluding same type' do
             expect(a).not_to eql(3)  
             expect(b).not_to eql(3.0)  
-            expect(a).nat_to eql(b)  
+            expect(a).not_to eql(b)  
         end
     end
     
