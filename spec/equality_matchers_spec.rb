@@ -21,5 +21,10 @@ RSpec.describe 'equality-matchers' do
         end
     end
     
+    describe "equal and be matcher" do
+        let(:c) { [1, 2, 3] }
+        let(:d) { [1, 2, 3] }
+        let(:e) { c }  
+    end
     
 end
