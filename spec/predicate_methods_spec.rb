@@ -6,6 +6,7 @@ RSpec.describe 'predicate methods and predicate matchers' do
 
     it 'can be tested with predicate matchers' do
         expect(16 / 2).to be_even
-        expect(15).to be_add  
+        expect(15).to be_add
+        expect(0).to be_zero  
     end
 end
