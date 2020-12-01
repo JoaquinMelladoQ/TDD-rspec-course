@@ -25,6 +25,11 @@ RSpec.describe 'equality-matchers' do
         let(:c) { [1, 2, 3] }
         let(:d) { [1, 2, 3] }
         let(:e) { c }  
+
+        it 'equal cares about object identity' do
+            expect(c).to eq(d) 
+            expect(e).to eql(c)  
+        end
     end
     
 end
