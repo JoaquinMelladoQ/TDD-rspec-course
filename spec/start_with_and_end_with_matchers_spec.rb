@@ -16,6 +16,7 @@ RSpec.describe 'start_with and end_with matchers' do
         end
 
         it { is_expected.to start_with(:a, :b) }
+        it { is_expected.to end_with(:d) }
     end
     
     
