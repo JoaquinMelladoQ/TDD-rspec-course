@@ -12,5 +12,7 @@ RSpec.describe 'have_attributes matcher ' do
         it 'checks for object attribute and proper values' do
             expect(subject).to have_attributes(name: 'Stone Cold Steve Austin', finishing_move: 'Stunner') 
         end
+
+        it { is_expected.to have_attributes(name: 'Stone Cold Steve Austin', finishing_move: 'Stunner') }
     end
 end
