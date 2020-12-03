@@ -3,7 +3,7 @@ RSpec.describe 'raise_error matcher' do
         x
     end
 
-    it 'can check for any error' do
-        expect { some_method }.to raise_error
+    it 'can check for specific error being raised' do
+        expect { some_method }.to raise_error(NameError)
     end
 end
