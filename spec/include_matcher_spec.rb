@@ -5,6 +5,8 @@ RSpec.describe 'include matcher' do
             expect(subject).to include('choc') 
             expect(subject).to include('late') 
         end
+
+        it { is_expected.to include('hot') }
     end
     
 end
