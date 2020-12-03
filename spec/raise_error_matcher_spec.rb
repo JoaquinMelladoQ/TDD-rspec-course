@@ -5,5 +5,6 @@ RSpec.describe 'raise_error matcher' do
 
     it 'can check for specific error being raised' do
         expect { some_method }.to raise_error(NameError)
+        expect { 10 / 0 }.to raise_error(ZeroDivisionError)
     end
 end
