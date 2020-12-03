@@ -28,6 +28,9 @@ RSpec.describe 'include matcher' do
             expect(subject).to include(a: 2, b: 4) 
         end
 
+        it { is_expected.to include(:a) }
+        it { is_expected.to include(a: 2) }
+
     end
     
     
