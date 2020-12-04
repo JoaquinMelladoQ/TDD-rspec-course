@@ -5,4 +5,6 @@ RSpec.describe 25 do
         
         expect(subject).to be_odd.and be > 20  
     end
+
+    it { is_expected.to be_odd and be > 20 }
 end
