@@ -7,6 +7,8 @@ RSpec.describe 'not_to method' do
         expect(nil).not_to be_truthy
 
         expect('Philadelphia').not_to start_with('car')  
-        expect('Philadelphia').not_to end_with('city')  
+        expect('Philadelphia').not_to end_with('city')
+        
+        expect(5).not_to respond_to(:length)  
     end
 end
