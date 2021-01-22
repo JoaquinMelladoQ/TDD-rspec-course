@@ -10,6 +10,7 @@ RSpec.describe "allow method review" do
 
     it 'can stub one or more methods on a real object' do
         arr = [1, 2, 3]
+        allow(arr).to receive(:sum).and_return(10)
         expect(arr.sum).to eq(6)
     end
 
