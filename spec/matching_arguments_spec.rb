@@ -8,5 +8,7 @@ RSpec.describe "matching arguments" do
         allow(three_element_array).to receive(:first).with(be >= 3).and_return([1, 2, 3])
 
         # DOUBLE IS MOCKING THE BEHAVIOR
+        expect(three_element_array.first).to eq(1)
+        expect(three_element_array.first(100)).to eq([1, 2, 3])
     end
 end
