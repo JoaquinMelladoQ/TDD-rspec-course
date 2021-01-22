@@ -7,4 +7,10 @@ RSpec.describe "allow method review" do
         expect(calculator.add(2, 3, 4)).to eq(15)
         expect(calculator.add("it will always return 15 because add is empty")).to eq(15)
     end
+
+    it 'can stub one or more methods on a real object' do
+        arr = [1, 2, 3]
+        expect(arr.sum).to eq(6)
+    end
+
 end
