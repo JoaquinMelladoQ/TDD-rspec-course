@@ -32,6 +32,7 @@ class Movie
             actor.act
             actor.fall_of_ladder
             actor.light_on_fire
+            actor.act
         end
     end
 end
