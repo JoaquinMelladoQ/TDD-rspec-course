@@ -1,6 +1,6 @@
 # TDD Rspec-course
 
-An example of how you can mockering a certain behaviour...
+An example of how you can mock certain behaviour...
 ![Mock image](spec/assets/mock1.png)
 
 
