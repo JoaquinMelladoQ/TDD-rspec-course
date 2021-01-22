@@ -18,7 +18,8 @@ RSpec.describe Person do
             # person = instance_double(Person, a: "Hello", b: 20)
 
             person = instance_double(Person)
-            allow(person).to receive(:a).with(3, 10).and_return("Hello")
+            allow(person).to receive(:a).with(3).and_return("Hello")
+            expect(person.a(3)).to eq("Hello")
         end
     end
 end
